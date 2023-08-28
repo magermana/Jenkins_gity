@@ -41,7 +41,7 @@ stage('Deploy') {
 stage('Notify') {
    steps {
        emailext (
-	      to; 'magermana@deakin.edu.au',
+	      to: 'magermana@deakin.edu.au',
               subject: 'Build Notification: ${currentBuild.fullDisplayName}',
               body: '''<p>Build ${currentBuild.fullDisplayName} has completed:</p>
                        <p>Status: ${currentBuild.result}</p>
