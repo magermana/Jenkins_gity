@@ -8,8 +8,7 @@ pipeline {
  stages {
     stage('Build') {
     steps {
-        echo 'fetch the source code from the directory path specified by
-֒        the environment variable'
+        echo 'fetch the source code from the directory path specified by the environment variable'
         echo 'compile the code and generate any necessary artifacts'
     }
 }
@@ -26,8 +25,7 @@ stage('Code Quality Check') {
 }
 stage('Deploy') {
     steps {
-        echo 'deploy the application to a testing environment specified by
-֒       the environment variable'
+        echo 'deploy the application to a testing environment specified by the environment variable'
     }
 }
  stage('Approval') {
@@ -37,8 +35,7 @@ stage('Deploy') {
 }
  stage('Deploy to Production') {
  steps {
-    echo "Deploying to production environment:
-        ${PRODUCTION_ENVIRONMENT}"
+    echo "Deploying to production environment: ${PRODUCTION_ENVIRONMENT}"
         }
         }
 
